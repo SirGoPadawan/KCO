@@ -1,14 +1,14 @@
-window.addEventListener("load", function () {
-  document.getElementById("headerSocialBtn").onclick = function () {
-    updateState("headerSocialLinks");
-  };
-  document.getElementById("headerMapBtn").onclick = function () {
-    updateState("headerMapMenu");
-  };
-  document.getElementById("headerSearchBtn").onclick = function () {
-    updateState("headerSearchPlace");
-  };
-});
+import "../../css/style.css";
+
+document.getElementById("headerSocialBtn").onclick = function () {
+  updateState("headerSocialLinks");
+};
+document.getElementById("headerMapBtn").onclick = function () {
+  updateState("headerMapMenu");
+};
+document.getElementById("headerSearchBtn").onclick = function () {
+  updateState("headerSearchPlace");
+};
 function updateState(id) {
   let elem = document.getElementById(id);
 
