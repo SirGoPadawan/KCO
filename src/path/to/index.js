@@ -1,4 +1,5 @@
 import "../../css/style.css";
+import "../../img/logo.png";
 
 document.getElementById("headerSocialBtn").onclick = function () {
   updateState("headerSocialLinks");
