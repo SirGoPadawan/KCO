@@ -16,16 +16,12 @@ function updateState(id) {
     elem.classList.remove("active");
   } else elem.classList.add("active");
 }
-
-/* function menuOpen(id) {
-  let n = document.querySelectorAll(".nav-middle__btn");
-  n.forEach(function (btn) {
-    btn.onclick = function () {
-      n.forEach(function (btn) {
-        btn.classList.remove("active");
-      });
-      btn.classList.add("active");
-    };
-  });
-}
- */
+let openList = document.querySelectorAll(".nav-info__btn", ".nav-info__list");
+openList.forEach(function (btn) {
+  btn.onclick = function () {
+    openList.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+    btn.classList.add("active");
+  };
+});
