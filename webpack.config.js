@@ -2,6 +2,7 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
   context: path.resolve("src"),
@@ -17,8 +18,12 @@ module.exports = {
         use: ["file-loader"],
       },
       {
-        test: /\.(otf)$/,
+        test: /\.otf$/,
         use: ["file-loader"],
+      },
+      {
+        test: /\.vue$/,
+        loader: ["vue-loader"],
       },
     ],
   },
@@ -26,6 +31,7 @@ module.exports = {
     new HTMLWebpackPlugin({ template: "./index.html" }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([{ from: "./static", to: "./static" }]),
+    new VueLoaderPlugin(),
   ],
   entry: "./path/to/index.js",
   output: {

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    /* .active {
+      display: flex;
+    } */
+  </style>
   <body>
     <header class="container">
       <section class="header__top">
@@ -15,7 +20,7 @@
           <a href="#" class="header-eye black">Контрастная версия</a>
         </div>
         <div class="header__link header__link_more-size">
-          <p>Предв. запись: 8 4212 41-06-30</p>
+          <a href="#" class="black">Предв. запись: 8 4212 41-06-30</a>
         </div>
         <div class="header__link"><a href="#" class="green">Как записаться</a></div>
         <div class="header__link header__link_indentation-right">
@@ -25,7 +30,7 @@
       <section class="header__bottom">
         <div class="header__logo">
           <div><img src="static/logo.png" alt="" /></div>
-          <p class="header__title">Краевой клинический центр онкологии</p>
+          <a href="#" class="header__title black">Краевой клинический центр онкологии</a>
         </div>
         <div class="header__hot-line">
           <div><p class="header__text">Горячая линия:</p></div>
@@ -658,90 +663,111 @@
       </section>
     </main>
     <footer class="container">
-      <nav class="header__main-menu">
-        <ul class="header__menu-items">
-          <li class="header__link-item">
-            <a href="#" class="black">О центре<i class="fas fa-sort-down"></i></a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item"><a href="#">Новости</a></li>
-              <li class="header__submenu-item"><a href="#">Лицензии</a></li>
-              <li class="header__submenu-item"><a href="#">Список работников</a></li>
-              <li class="header__submenu-item"><a href="#">Оргструктура</a></li>
-              <li class="header__submenu-item"><a href="#">Платные услуги</a></li>
-              <li class="header__submenu-item"><a href="#">Фотографии</a></li>
-              <li class="header__submenu-item"><a href="#">Видеоархив</a></li>
+      <nav class="nav-footer">
+        <ul class="nav-footer__items">
+          <li class="nav-footer__block">
+            <a href="#" class="nav-footer__headline-text black">О центре</a>
+            <ul class="nav-footer__block-links">
+              <li class="nav-footer__link"><a href="#">Новости</a></li>
+              <li class="nav-footer__link"><a href="#">Лицензии</a></li>
+              <li class="nav-footer__link"><a href="#">Список работников</a></li>
+              <li class="nav-footer__link"><a href="#">Орг. структура</a></li>
+              <li class="nav-footer__link"><a href="#">Платные услуги</a></li>
+              <li class="nav-footer__link"><a href="#">Фотографии</a></li>
             </ul>
           </li>
-          <li class="header__link-item">
-            <a href="#" class="black">Пациентам<i class="fas fa-sort-down"></i></a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item"><a href="#">Новости</a></li>
-              <li class="header__submenu-item"><a href="#">Лицензии</a></li>
-              <li class="header__submenu-item"><a href="#">Список работников</a></li>
-              <li class="header__submenu-item"><a href="#">Оргструктура</a></li>
-              <li class="header__submenu-item"><a href="#">Платные услуги</a></li>
-              <li class="header__submenu-item"><a href="#">Фотографии</a></li>
-              <li class="header__submenu-item"><a href="#">Видеоархив</a></li>
+          <li class="nav-footer__block">
+            <a href="#" class="nav-footer__headline-text black">Пациентам</a>
+            <ul class="nav-footer__block-links">
+              <li class="nav-footer__link"><a href="#">Как записаться</a></li>
+              <li class="nav-footer__link"><a href="#">Как подготовиться</a></li>
+              <li class="nav-footer__link"><a href="#">Важные моменты</a></li>
+              <li class="nav-footer__link"><a href="#">Выдача результатов</a></li>
             </ul>
           </li>
-          <li class="header__link-item">
-            <a href="#" class="black">Ядерная медицина<i class="fas fa-sort-down"></i></a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item"><a href="#">Новости</a></li>
-              <li class="header__submenu-item"><a href="#">Лицензии</a></li>
-              <li class="header__submenu-item"><a href="#">Список работников</a></li>
-              <li class="header__submenu-item"><a href="#">Оргструктура</a></li>
-              <li class="header__submenu-item"><a href="#">Платные услуги</a></li>
-              <li class="header__submenu-item"><a href="#">Фотографии</a></li>
-              <li class="header__submenu-item"><a href="#">Видеоархив</a></li>
+          <li class="nav-footer__block">
+            <a href="#" class="nav-footer__headline-text black">Информация</a>
+            <ul class="nav-footer__block-links">
+              <li class="nav-footer__link"><a href="#">Поликлиника</a></li>
+              <li class="nav-footer__link"><a href="#">Онко-дайджест</a></li>
+              <li class="nav-footer__link"><a href="#">Публикации</a></li>
+              <li class="nav-footer__link"><a href="#">Права пациента</a></li>
+              <li class="nav-footer__link"><a href="#">Онкология: наука</a></li>
             </ul>
           </li>
-          <li class="header__submenu-item">
-            <a href="#" class="black">Наш адрес и контакты</a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item"><a href="#">Новости</a></li>
-              <li class="header__submenu-item"><a href="#">Лицензии</a></li>
-              <li class="header__submenu-item"><a href="#">Список работников</a></li>
-              <li class="header__submenu-item"><a href="#">Оргструктура</a></li>
-              <li class="header__submenu-item"><a href="#">Платные услуги</a></li>
-              <li class="header__submenu-item"><a href="#">Фотографии</a></li>
-              <li class="header__submenu-item"><a href="#">Видеоархив</a></li>
+          <li class="nav-footer__block">
+            <a href="#" class="nav-footer__headline-text black">Наука</a>
+            <ul class="nav-footer__block-links">
+              <li class="nav-footer__link"><a href="#">Амурский мед.журнал</a></li>
+              <li class="nav-footer__link"><a href="#">Защита диссертаций</a></li>
+              <li class="nav-footer__link"><a href="#">Исследования клиники</a></li>
+              <li class="nav-footer__link"><a href="#">Лекции и доклады</a></li>
             </ul>
           </li>
-          <li class="header__submenu-item">
-            <a href="#" class="black">Специалисты ПЭТ-центра</a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item"><a href="#">Новости</a></li>
-              <li class="header__submenu-item"><a href="#">Лицензии</a></li>
-              <li class="header__submenu-item"><a href="#">Список работников</a></li>
-              <li class="header__submenu-item"><a href="#">Оргструктура</a></li>
-              <li class="header__submenu-item"><a href="#">Платные услуги</a></li>
-              <li class="header__submenu-item"><a href="#">Фотографии</a></li>
-              <li class="header__submenu-item"><a href="#">Видеоархив</a></li>
+          <li class="nav-footer__block">
+            <a href="#" class="nav-footer__headline-text black">Сведения</a>
+            <ul class="nav-footer__block-links">
+              <li class="nav-footer__link"><a href="#">Телемедицина</a></li>
+              <li class="nav-footer__link"><a href="#">Льготные лекарства</a></li>
+              <li class="nav-footer__link"><a href="#">Запись на прием</a></li>
+              <li class="nav-footer__link"><a href="#">Анкетирование</a></li>
+              <li class="nav-footer__link"><a href="#">Взгляд со стороны</a></li>
             </ul>
           </li>
-          <li class="header__submenu-item">
-            <a href="#" class="black">Фотогалерея</a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item"><a href="#">Новости</a></li>
-              <li class="header__submenu-item"><a href="#">Лицензии</a></li>
-              <form id="" class="header__form-search">
-                <div id="" class="header__search-btn btn"></div>
-                <input
-                  id="headerSearchPlace"
-                  type="text"
-                  class="header__input-search"
-                  placeholder="Поиск по сайту..."
-                />
-              </form>
+          <li class="nav-footer__block" id="footerChange">
+            <a href="#" class="nav-footer__headline-text black">Контакты</a>
+            <ul class="nav-footer__block-links">
+              <li class="nav-footer__link"><a href="#">Вопросы и ответы</a></li>
+              <div class="map-site">
+                <p class="map-site__text">Карта сайта</p>
+              </div>
+              <div class="footer-search">
+                <p class="footer__text-search">Поиск</p>
+                <form class="header__form-search">
+                  <div
+                    @click="isActivePlaceHolder=!isActivePlaceHolder"
+                    class="header__search-btn btn"
+                  ></div>
+                  <input
+                    type="text"
+                    class="header__input-search"
+                    placeholder="Поиск по сайту..."
+                    v-bind:class="[isActivePlaceHolder ? 'active' : '']"
+                  />
+                </form>
+              </div>
+              <div class="link-youtube">
+                <a href="#" class="youtube-img-link"></a>
+                <div class="header__social">
+                  <button id="" class="header__btn btn"></button>
+                  <div id="" class="header__social-links">
+                    <p><a href="#" class="header__social-item vk black"></a></p>
+                    <p><a href="#" class="header__social-item fb black"></a></p>
+                    <p><a href="#" class="header__social-item ok black"></a></p>
+                    <p><a href="#" class="header__social-item inst black"></a></p>
+                  </div>
+                </div>
+              </div>
             </ul>
           </li>
         </ul>
+        <p class="footer-text__bottom">
+          Предварительная запись (кроме выходных и праздничных дней) на прием: с 13:00 до
+          15:00 по тел.: 8 4212 41-06-30, 41-06-28
+        </p>
       </nav>
+      <section class="footer-bottom">
+        <p>© 1995–2019 «КГБУЗ ККЦО». Перепечатка с разрешения.</p>
+        <a href="#">Политика обработки данных.</a>
+        <address class="footer-address">
+          <a href="#" class="green">Сайт разработан «ТСС».</a>
+        </address>
+      </section>
     </footer>
     <script
       src="https://kit.fontawesome.com/e72d527801.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </body>
 </html>

@@ -1,13 +1,13 @@
 import "../../css/style.css";
-
+import "./vue.js";
 document.getElementById("headerSocialBtn").onclick = function () {
   updateState("headerSocialLinks");
 };
 document.getElementById("headerMapBtn").onclick = function () {
   updateState("headerMapMenu");
 };
-document.getElementById("headerSearchBtn").onclick = function () {
-  updateState("headerSearchPlace");
+document.getElementById("headerSearchBtn", "footerSearch").onclick = function () {
+  updateState("headerSearchPlace", "footerSearchBtn");
 };
 function updateState(id) {
   let elem = document.getElementById(id);
@@ -24,4 +24,10 @@ openList.forEach(function (btn) {
     });
     btn.classList.add("active");
   };
+});
+let changeClass = new Vue({
+  el: "#footerChange",
+  data: {
+    isActivePlaceHolder: false,
+  },
 });
