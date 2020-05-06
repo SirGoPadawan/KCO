@@ -1,13 +1,14 @@
+"use strict";
 import "../../css/style.css";
 import "./vue.js";
-document.getElementById("headerSocialBtn").onclick = function () {
-  updateState("headerSocialLinks");
+document.getElementById("SocialBtn").onclick = function() {
+  updateState("SocialLinks");
 };
-document.getElementById("headerMapBtn").onclick = function () {
-  updateState("headerMapMenu");
+document.getElementById("mapBtn").onclick = function() {
+  updateState("MapMenu");
 };
-document.getElementById("headerSearchBtn", "footerSearch").onclick = function () {
-  updateState("headerSearchPlace", "footerSearchBtn");
+document.getElementById("searchBtn").onclick = function() {
+  updateState("searchPlace");
 };
 function updateState(id) {
   let elem = document.getElementById(id);
@@ -16,18 +17,12 @@ function updateState(id) {
     elem.classList.remove("active");
   } else elem.classList.add("active");
 }
-let openList = document.querySelectorAll(".nav-info__btn", ".nav-info__list");
-openList.forEach(function (btn) {
-  btn.onclick = function () {
-    openList.forEach(function (btn) {
+let openList = document.querySelectorAll(".nav-info__btn");
+openList.forEach(function(btn) {
+  btn.onclick = function() {
+    openList.forEach(function(btn) {
       btn.classList.remove("active");
     });
     btn.classList.add("active");
   };
-});
-let changeClass = new Vue({
-  el: "#footerChange",
-  data: {
-    isActivePlaceHolder: false,
-  },
 });

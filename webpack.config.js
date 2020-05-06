@@ -7,6 +7,11 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 module.exports = {
   context: path.resolve("src"),
   mode: "development",
+  resolve: {
+    alias: {
+      vue$: "vue/dist/vue.esm.js",
+    },
+  },
   module: {
     rules: [
       {
