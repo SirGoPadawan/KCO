@@ -7,11 +7,12 @@
 </template>
  
 <script>
-import TheHead from "./components/TheHead.vue";
-import TheBody from "./components/TheBody.vue";
-import TheFooter from "./components/TheFooter.vue";
 export default {
-  components: { TheHead, TheBody, TheFooter },
+  components: {
+    TheHead: () => import("./components/TheHead.vue"),
+    TheBody: () => import("./components/TheBody.vue"),
+    TheFooter: () => import("./components/TheFooter.vue")
+  },
   name: "app",
   data() {}
 };
