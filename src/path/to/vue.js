@@ -1,14 +1,13 @@
 import Vue from "vue";
 
+let elem = new Vue.component({});
+
 let changeClass = new Vue({
-  el: "#changeClass",
+  el: "#app",
+  components: {
+    elem: elem,
+  },
   data: {
     isActivePlaceHolder: false,
-  },
-});
-let socialClas = new Vue({
-  el: "#app",
-  data: {
-    isActiveSocial: false,
   },
 });
