@@ -38,7 +38,7 @@ module.exports = {
     new CopyWebpackPlugin([{ from: "./static", to: "./static" }]),
     new VueLoaderPlugin(),
   ],
-  entry: "./path/to/index.js",
+  entry: "./index.js",
   output: {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "build"),
