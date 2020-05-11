@@ -1,5 +1,5 @@
 <template>
-  <header class="container">
+  <header class="container" id="head">
     <section class="header__top">
       <div class="header__link header__link_indentation-left">
         <a href="#" class="green">In English</a>
@@ -42,8 +42,11 @@
       </div>
       <div class="header__reference">
         <div class="social">
-          <button id="SocialBtn" class="social-btn btn"></button>
-          <div id="SocialLinks" class="social-links">
+          <button
+            @click="isActiveSocial = !isActiveSocial"
+            class="social-btn btn"
+          ></button>
+          <div v-bind:class="[isActiveSocial ? 'active' : '']" class="social-links">
             <p>
               <a href="#" class="social-item vk black"></a>
             </p>
@@ -59,11 +62,17 @@
           </div>
         </div>
         <div id="map" class="map-items">
-          <button @click="isActiveMapMenu=!isActiveMapMenu" class="butter-btn btn"></button>
+          <button
+            @click="isActiveMapMenu = !isActiveMapMenu"
+            class="butter-btn btn"
+          ></button>
           <div class="map-site" v-bind:class="[isActiveMapMenu ? 'active' : '']">
             <div class="top__map-site">
               <p class="headline text__map-site">Карта сайта</p>
-              <div @click="isActiveMapMenu" class="close-place__map-site">
+              <div
+                @click="isActiveMapMenu = !isActiveMapMenu"
+                class="close-place__map-site"
+              >
                 <button class="btn__map-site btn">Закрыть</button>
                 <div class="close-ico"></div>
               </div>
@@ -372,9 +381,26 @@
         </li>
       </ul>
       <form class="form-search">
-        <div id="searchBtn" class="search-btn btn"></div>
-        <input id="searchPlace" type="text" class="search-place" placeholder="Поиск по сайту..." />
+        <div
+          @click="isActivePlaceHolder = !isActivePlaceHolder"
+          class="search-btn btn"
+        ></div>
+        <input
+          v-bind:class="[isActivePlaceHolder ? 'active' : '']"
+          type="text"
+          class="search-place"
+          placeholder="Поиск по сайту..."
+        />
       </form>
     </nav>
   </header>
 </template>
+
+<script>
+export default {
+  name: "activeClass",
+  data: function() {
+    return { isActiveMapMenu: false, isActiveSocial: false, isActivePlaceHolder: false };
+  },
+};
+</script>

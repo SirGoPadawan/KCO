@@ -111,7 +111,10 @@
             <div class="footer-search">
               <p class="footer__text-search">Поиск</p>
               <form class="form-search" id="changeClass">
-                <div @click="isActivePlaceHolder=!isActivePlaceHolder" class="search-btn btn"></div>
+                <div
+                  @click="isActivePlaceHolder = !isActivePlaceHolder"
+                  class="search-btn btn"
+                ></div>
                 <input
                   type="text"
                   class="search-place"
@@ -125,7 +128,7 @@
               <div class="social">
                 <button
                   id="btnSocialFooter"
-                  @click="isActiveSocial=!isActiveSocial"
+                  @click="isActiveSocial = !isActiveSocial"
                   class="social-btn btn"
                 ></button>
                 <div
@@ -165,3 +168,11 @@
     </section>
   </footer>
 </template>
+<script>
+export default {
+  name: "activeClass",
+  data: function() {
+    return { isActivePlaceHolder: false, isActiveSocial: false };
+  },
+};
+</script>

@@ -2,11 +2,15 @@
   <main class="container">
     <section class="main-content">
       <article class="main-content__slider">
-        <img src="static/layer-main-block.png" alt class="main-content__slider-img item-img" />
+        <img
+          src="static/layer-main-block.png"
+          alt
+          class="main-content__slider-img item-img"
+        />
         <p class="main-content__slider-row-1 white">Публикации</p>
-        <p
-          class="main-content__slider-row-2 white"
-        >Чем раньше выявлен диагноз, тем больше шансов на благоприятный исход</p>
+        <p class="main-content__slider-row-2 white">
+          Чем раньше выявлен диагноз, тем больше шансов на благоприятный исход
+        </p>
         <div class="main-content__slider-managment">
           <div class="main-content__slider-dots">
             <div class="main-content__dot active"></div>
@@ -23,9 +27,9 @@
       </article>
       <article class="main-content__right-collumn">
         <div class="main-content__collumn-item green-ground white">
-          <p
-            class="main-content__text item-text_semibold"
-          >Онкологическое заболевание: как защититься от рака?</p>
+          <p class="main-content__text item-text_semibold">
+            Онкологическое заболевание: как защититься от рака?
+          </p>
         </div>
         <div class="main-content__collumn-item blue-ground white">
           <p class="main-content__text item-text_semibold">
@@ -33,7 +37,9 @@
           </p>
         </div>
         <div class="main-content__collumn-item aqua-ground blue">
-          <p class="main-content__text item-text_semibold">Состоялся визит японской делегации</p>
+          <p class="main-content__text item-text_semibold">
+            Состоялся визит японской делегации
+          </p>
         </div>
         <div class="main-content__collumn-item item-border black">
           <p class="main-content__questions">
@@ -59,10 +65,12 @@
           <div>
             <time datetime="2018-08-27" class="time position smoke">27 ноября</time>
             <a href="#" class="news__collumn-ico watch"></a>
-            <p
-              class="news__text item-text_extrabold left"
-            >Профилактика рака груди. Школа здоровья. GuberniaTV</p>
-            <a href="#" class="link_reverse news-position item-text_extrabold green white">Смотреть</a>
+            <p class="news__text item-text_extrabold left">
+              Профилактика рака груди. Школа здоровья. GuberniaTV
+            </p>
+            <a href="#" class="link_reverse news-position item-text_extrabold green white"
+              >Смотреть</a
+            >
           </div>
         </article>
         <article class="news__collumn-item">
@@ -75,7 +83,9 @@
             <p class="news__text item-text_extrabold right">
               <q>Таргетная терапия метастатического рака молочной железы</q>
             </p>
-            <a href="#" class="link_reverse news-position item-text_extrabold blue white">Читать</a>
+            <a href="#" class="link_reverse news-position item-text_extrabold blue white"
+              >Читать</a
+            >
           </div>
         </article>
       </div>
@@ -95,16 +105,16 @@
         </article>
         <article class="news-row__box item">
           <time datetime="2018-10-27" class="time smoke">25 октября</time>
-          <p
-            class="news-row__text-style item-text_semibold"
-          >Визит коллег из г. Кванчжу. Наш онкологический центр посетила делегация</p>
+          <p class="news-row__text-style item-text_semibold">
+            Визит коллег из г. Кванчжу. Наш онкологический центр посетила делегация
+          </p>
           <a href="#" class="btn-link blue">Читать</a>
         </article>
         <article class="news-row__box item">
           <time datetime="2018-10-27" class="time smoke">5 октября</time>
-          <p
-            class="news-row__text-style item-text_semibold"
-          >Проект Центра протонно-лучевой терапии в Хабаровске</p>
+          <p class="news-row__text-style item-text_semibold">
+            Проект Центра протонно-лучевой терапии в Хабаровске
+          </p>
           <a href="#" class="btn-link green">Смотреть</a>
         </article>
       </div>
@@ -200,15 +210,17 @@
         <article class="relevant__bottom-box">
           <img src="static/gerb.png" alt />
           <h3 class="item-text_extrabold">Минздрав России</h3>
-          <p
-            class="relevant-text item-text_semibold"
-          >Медицинская помощь больным с онкологическими заболеваниями</p>
+          <p class="relevant-text item-text_semibold">
+            Медицинская помощь больным с онкологическими заболеваниями
+          </p>
           <a href="#" class="link_big item-text_extrabold">Плакат-памятка</a>
         </article>
         <article class="relevant__bottom-box">
           <img src="static/ACS.png" alt />
           <h3 class="item-text_extrabold">Интернет сервис</h3>
-          <p class="relevant-text item-text_semibold">Анамнестический онкологический скриннинг</p>
+          <p class="relevant-text item-text_semibold">
+            Анамнестический онкологический скриннинг
+          </p>
           <a href="#" class="link_big item-text_extrabold">Пройти бесплатно</a>
         </article>
         <article class="relevant__bottom-box">
@@ -232,10 +244,12 @@
           <div class="digest__box-img">
             <img src="static/digest-img-1.png" class="item-img" alt />
           </div>
-          <time datetime="2018-10-27" class="digest-time_style time smoke">27 октября</time>
+          <time datetime="2018-10-27" class="digest-time_style time smoke"
+            >27 октября</time
+          >
           <p class="digest-text_style item-text_semibold">
-            Сергей Тюляндин: частота рака почки, простаты и молочной железы растет, а
-            рака легкого - снижается
+            Сергей Тюляндин: частота рака почки, простаты и молочной железы растет, а рака
+            легкого - снижается
           </p>
           <a href="#" class="btn-link digest blue">Материал</a>
         </article>
@@ -243,20 +257,24 @@
           <div class="digest__box-img">
             <img src="static/digest-img-2.png" class="item-img" alt />
           </div>
-          <time datetime="2018-10-17" class="digest-time_style time smoke">17 октября</time>
-          <p
-            class="digest-text_style item-text_semibold"
-          >Рак толстого кишечника у женщин молодеет из-за ожирения</p>
+          <time datetime="2018-10-17" class="digest-time_style time smoke"
+            >17 октября</time
+          >
+          <p class="digest-text_style item-text_semibold">
+            Рак толстого кишечника у женщин молодеет из-за ожирения
+          </p>
           <a href="#" class="btn-link digest blue">Материал</a>
         </article>
         <article class="digest__box item">
           <div class="digest__box-img">
             <img src="static/digest-img-3.png" class="item-img" alt />
           </div>
-          <time datetime="2018-10-27" class="digest-time_style time smoke">27 октября</time>
+          <time datetime="2018-10-27" class="digest-time_style time smoke"
+            >27 октября</time
+          >
           <p class="digest-text_style item-text_semibold">
-            Российские противоопухолевые препараты на основе онколитических вирусов
-            могут появиться
+            Российские противоопухолевые препараты на основе онколитических вирусов могут
+            появиться
           </p>
           <a href="#" class="btn-link digest blue">Материал</a>
         </article>
@@ -276,8 +294,7 @@
             <div class="public-box__item_style">
               <time datetime="2018-08-27" class="time smoke">27 ноября</time>
               <p class="item-text_semibold">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-                ipsam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsam!
               </p>
               <a href="#" class="btn-link blue">Читать</a>
             </div>
@@ -288,9 +305,9 @@
             </div>
             <div class="public-box__item_style">
               <time datetime="2018-08-27" class="time smoke">27 ноября</time>
-              <p
-                class="item-text_semibold"
-              >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, cumque.</p>
+              <p class="item-text_semibold">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, cumque.
+              </p>
               <a href="#" class="btn-link blue">Читать</a>
             </div>
           </article>
@@ -300,9 +317,9 @@
             </div>
             <div class="public-box__item_style">
               <time datetime="2018-08-27" class="time smoke">27 ноября</time>
-              <p
-                class="item-text_semibold"
-              >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, tempora.</p>
+              <p class="item-text_semibold">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, tempora.
+              </p>
               <a href="#" class="btn-link blue">Читать</a>
             </div>
           </article>
@@ -314,10 +331,12 @@
           <div class="public__box-right__items">
             <time datetime="2018-08-27" class="public__time time smoke">27 ноября</time>
             <p class="public-text item-text_extrabold">
-              <q>Хабаровский край - образ будущего</q>: завершение полной
-              технологической структуры краевого клинического
+              <q>Хабаровский край - образ будущего</q>: завершение полной технологической
+              структуры краевого клинического
             </p>
-            <a href="#" class="public__link link_reverse item-text_extrabold blue white">Читать</a>
+            <a href="#" class="public__link link_reverse item-text_extrabold blue white"
+              >Читать</a
+            >
           </div>
         </div>
       </div>
@@ -336,10 +355,9 @@
             </div>
           </div>
           <div class="links-slider__box-text">
-            <a
-              href="#"
-              class="item-text_semibold"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a>
+            <a href="#" class="item-text_semibold"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
+            >
           </div>
         </div>
         <div class="links-slider__bottom-box">
@@ -349,10 +367,9 @@
             </div>
           </div>
           <div class="links-slider__box-text">
-            <a
-              href="#"
-              class="item-text_semibold"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a>
+            <a href="#" class="item-text_semibold"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
+            >
           </div>
         </div>
         <div class="links-slider__bottom-box">
@@ -362,10 +379,9 @@
             </div>
           </div>
           <div class="links-slider__box-text">
-            <a
-              href="#"
-              class="item-text_semibold"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a>
+            <a href="#" class="item-text_semibold"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
+            >
           </div>
         </div>
         <div class="links-slider__bottom-box">
@@ -375,10 +391,9 @@
             </div>
           </div>
           <div class="links-slider__box-text">
-            <a
-              href="#"
-              class="item-text_semibold"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a>
+            <a href="#" class="item-text_semibold"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
+            >
           </div>
         </div>
         <div class="links-slider__bottom-box">
@@ -388,10 +403,9 @@
             </div>
           </div>
           <div class="links-slider__box-text">
-            <a
-              href="#"
-              class="item-text_semibold"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a>
+            <a href="#" class="item-text_semibold"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
+            >
           </div>
         </div>
         <div class="links-slider__bottom-box">
@@ -401,10 +415,9 @@
             </div>
           </div>
           <div class="links-slider__box-text">
-            <a
-              href="#"
-              class="item-text_semibold"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a>
+            <a href="#" class="item-text_semibold"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
+            >
           </div>
         </div>
       </article>
@@ -418,19 +431,19 @@
         <div class="about-collumns__box-left">
           <div class="about-collumns__text">
             <p class="about-text item-text_semibold">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod
-              hic facilis consequatur dignissimos cum sequi reprehenderit assumenda
-              dolorem excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod hic
+              facilis consequatur dignissimos cum sequi reprehenderit assumenda dolorem
+              excepturi.
             </p>
             <p class="item-text_semibold">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod
-              hic facilis consequatur dignissimos cum sequi reprehenderit assumenda
-              dolorem excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod hic
+              facilis consequatur dignissimos cum sequi reprehenderit assumenda dolorem
+              excepturi.
             </p>
             <p class="item-text_semibold">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod
-              hic facilis consequatur dignissimos cum sequi reprehenderit assumenda
-              dolorem excepturi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod hic
+              facilis consequatur dignissimos cum sequi reprehenderit assumenda dolorem
+              excepturi.
             </p>
           </div>
           <div class="about-collumns__link">
