@@ -8,13 +8,15 @@ new Vue({
   render: (h) => h(App),
   data: function() {},
 });
-
-let openList = document.querySelectorAll(".nav-info__btn");
-openList.forEach(function(btn) {
-  btn.onclick = function() {
-    openList.forEach(function(btn) {
-      btn.classList.remove("active");
-    });
-    btn.classList.add("active");
-  };
-});
+let btnsInfo = document.querySelectorAll(".nav-info__btn");
+let listLinksInfo = document.querySelectorAll(".nav-info__list");
+let idInfoBtn = btnsInfo.IndexOf(
+  btnsInfo.forEach(function(btn) {
+    btn.onclick = function() {
+      btnsInfo.forEach(function(btn) {
+        btn.classList.remove("active");
+      });
+      btn.classList.add("active");
+    };
+  })
+);

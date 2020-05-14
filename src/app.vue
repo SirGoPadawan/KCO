@@ -1,17 +1,17 @@
 <template>
   <div>
-    <TheHead />
-    <TheBody />
-    <TheFooter />
+    <the-head />
+    <the-main />
+    <the-footer />
   </div>
 </template>
 
 <script>
 export default {
   components: {
-    TheHead: () => import("./components/TheHead.vue"),
-    TheBody: () => import("./components/TheBody.vue"),
-    TheFooter: () => import("./components/TheFooter.vue"),
-  },
+    "the-head": () => import("./components/TheHead.vue"),
+    "the-main": () => import("./components/TheMain.vue"),
+    "the-footer": () => import("./components/TheFooter.vue")
+  }
 };
 </script>
