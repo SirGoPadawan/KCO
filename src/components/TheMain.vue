@@ -1,30 +1,7 @@
 <template>
   <main class="container">
     <section class="main-content">
-      <article class="main-content__slider">
-        <img
-          src="static/layer-main-block.png"
-          alt
-          class="main-content__slider-img item-img"
-        />
-        <p class="main-content__slider-row-1 white">Публикации</p>
-        <p class="main-content__slider-row-2 white">
-          Чем раньше выявлен диагноз, тем больше шансов на благоприятный исход
-        </p>
-        <div class="main-content__slider-managment">
-          <div class="main-content__slider-dots">
-            <div class="main-content__dot active"></div>
-            <div class="main-content__dot"></div>
-            <div class="main-content__dot"></div>
-            <div class="main-content__dot"></div>
-            <div class="main-content__dot"></div>
-          </div>
-          <div class="main-content__slider-btns">
-            <button class="main-content__btn box-arrow arrow-left white"></button>
-            <button class="main-content__btn box-arrow arrow-right white"></button>
-          </div>
-        </div>
-      </article>
+      <v-slider-main class="main-content__slider" />
       <article class="main-content__right-collumn">
         <div class="main-content__collumn-item green-ground white">
           <p class="main-content__text item-text_semibold">
@@ -457,3 +434,10 @@
     </section>
   </main>
 </template>
+<script>
+export default {
+  components: {
+    "v-slider-main": () => import("./VSliderMain.vue"),
+  },
+};
+</script>
