@@ -4,7 +4,9 @@
       <div>
         <img src="static/logo.png" alt />
       </div>
-      <a href="#" class="header__title black">Краевой клинический центр онкологии</a>
+      <router-link to="/" class="header__title black">
+        Краевой клинический центр онкологии
+      </router-link>
     </div>
     <div class="header__hot-line">
       <div>
@@ -41,11 +43,17 @@
         </div>
       </div>
       <div id="map" class="map-items">
-        <button @click="isActiveMapMenu = !isActiveMapMenu" class="butter-btn btn"></button>
+        <button
+          @click="isActiveMapMenu = !isActiveMapMenu"
+          class="butter-btn btn"
+        ></button>
         <div class="map-site" v-bind:class="[isActiveMapMenu ? 'active' : '']">
           <div class="top__map-site">
             <p class="headline text__map-site">Карта сайта</p>
-            <div @click="isActiveMapMenu = !isActiveMapMenu" class="close-place__map-site">
+            <div
+              @click="isActiveMapMenu = !isActiveMapMenu"
+              class="close-place__map-site"
+            >
               <button class="btn__map-site btn">Закрыть</button>
               <div class="close-ico"></div>
             </div>
@@ -239,6 +247,6 @@ export default {
   name: "statusClassHeadMiddle",
   data: function() {
     return { isActiveMapMenu: false, isActiveSocial: false };
-  }
+  },
 };
 </script>

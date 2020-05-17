@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <section class="main-content">
-      <v-slider-main class="main-content__slider" />
+      <the-slider-main class="main-content__slider" />
       <article class="main-content__right-collumn">
         <div class="main-content__collumn-item green-ground white">
           <p class="main-content__text item-text_semibold">
@@ -178,38 +178,7 @@
       </div>
     </nav>
     <section class="relevant">
-      <header class="relevant__top">
-        <button class="box-arrow arrow-left smoke"></button>
-        <a href="#" class="headline blue">Актуально</a>
-        <button class="box-arrow arrow-right smoke"></button>
-      </header>
-      <div class="relevant__bottom">
-        <article class="relevant__bottom-box">
-          <img src="static/gerb.png" alt />
-          <h3 class="item-text_extrabold">Минздрав России</h3>
-          <p class="relevant-text item-text_semibold">
-            Медицинская помощь больным с онкологическими заболеваниями
-          </p>
-          <a href="#" class="link_big item-text_extrabold">Плакат-памятка</a>
-        </article>
-        <article class="relevant__bottom-box">
-          <img src="static/ACS.png" alt />
-          <h3 class="item-text_extrabold">Интернет сервис</h3>
-          <p class="relevant-text item-text_semibold">
-            Анамнестический онкологический скриннинг
-          </p>
-          <a href="#" class="link_big item-text_extrabold">Пройти бесплатно</a>
-        </article>
-        <article class="relevant__bottom-box">
-          <img src="static/book.png" alt />
-          <h3 class="item-text_extrabold">Информация</h3>
-          <p class="relevant-text item-text_semibold">
-            На основании ФЗ
-            <q>Об основах охраны здоровья граждан РФ</q>
-          </p>
-          <a href="#" class="link_big item-text_extrabold">Ознакомиться</a>
-        </article>
-      </div>
+      <the-relevant-slider />
     </section>
     <section class="digest-main">
       <header class="headline-top">
@@ -319,85 +288,7 @@
       </div>
     </section>
     <section class="links-slider">
-      <article class="relevant__top">
-        <button class="box-arrow arrow-left smoke"></button>
-        <a href="#" class="headline blue">Актуально</a>
-        <button class="box-arrow arrow-right smoke"></button>
-      </article>
-      <article class="links-slider__bottom-items">
-        <div class="links-slider__bottom-box">
-          <div class="links-slider__box-img">
-            <div class="links-slider__circle">
-              <img src="static/lin1.png" alt class />
-            </div>
-          </div>
-          <div class="links-slider__box-text">
-            <a href="#" class="item-text_semibold"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
-            >
-          </div>
-        </div>
-        <div class="links-slider__bottom-box">
-          <div class="links-slider__box-img">
-            <div class="links-slider__circle">
-              <img src="static/lin2.png" alt class />
-            </div>
-          </div>
-          <div class="links-slider__box-text">
-            <a href="#" class="item-text_semibold"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
-            >
-          </div>
-        </div>
-        <div class="links-slider__bottom-box">
-          <div class="links-slider__box-img">
-            <div class="links-slider__circle">
-              <img src="static/lin3.png" alt class />
-            </div>
-          </div>
-          <div class="links-slider__box-text">
-            <a href="#" class="item-text_semibold"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
-            >
-          </div>
-        </div>
-        <div class="links-slider__bottom-box">
-          <div class="links-slider__box-img">
-            <div class="links-slider__circle">
-              <img src="static/lin4.png" alt class />
-            </div>
-          </div>
-          <div class="links-slider__box-text">
-            <a href="#" class="item-text_semibold"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
-            >
-          </div>
-        </div>
-        <div class="links-slider__bottom-box">
-          <div class="links-slider__box-img">
-            <div class="links-slider__circle">
-              <img src="static/lin5.png" alt class />
-            </div>
-          </div>
-          <div class="links-slider__box-text">
-            <a href="#" class="item-text_semibold"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
-            >
-          </div>
-        </div>
-        <div class="links-slider__bottom-box">
-          <div class="links-slider__box-img">
-            <div class="links-slider__circle">
-              <img src="static/lin6.png" alt class />
-            </div>
-          </div>
-          <div class="links-slider__box-text">
-            <a href="#" class="item-text_semibold"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio</a
-            >
-          </div>
-        </div>
-      </article>
+      <the-actual-slider />
     </section>
     <section class="about">
       <header class="headline-top">
@@ -437,7 +328,9 @@
 <script>
 export default {
   components: {
-    "v-slider-main": () => import("./VSliderMain.vue"),
+    "the-slider-main": () => import("./TheSliderMain.vue"),
+    "the-relevant-slider": () => import("./TheRelevantSlider.vue"),
+    "the-actual-slider": () => import("./TheActualSlider.vue"),
   },
 };
 </script>

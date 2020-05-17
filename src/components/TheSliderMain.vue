@@ -1,8 +1,8 @@
 <template>
   <div>
     <VueSlickCarousel ref="carousel" v-bind="settings">
-      <div v-for="slide in sliders" :key="slide.id">
-        <img :src="slide.img" class="main-content__slider-img  item-img" alt="" />
+      <div v-for="slide in sliders" :key="slide.id" class="main-content__slide">
+        <img :src="slide.img" class="main-content__slider-img " alt="" />
         <a href="#" class="main-content__slider-row-1 white">{{ slide.text1 }} </a>
         <a href="#" class="main-content__slider-row-2 white">{{ slide.text2 }} </a>
       </div>
@@ -31,30 +31,27 @@ export default {
         arrows: false,
         dots: true,
         dotsClass: "main-content__dot",
-        edgeFriction: 0.35,
         infinite: true,
         speed: 0,
-        slidesToShow: 1,
-        slidesToScroll: 1,
       },
       sliders: [
         {
           id: 1,
           img: "../static/layer-main-block.png",
-          text1: "Lorem Ipsum Dolor",
-          text2: "Sit amet",
+          text1: "1Lorem Ipsum asdDolor",
+          text2: "1Sit ametasdasda",
         },
         {
           id: 2,
           img: "../static/layer-main-block2.png",
-          text1: "Lorem Ipsum Dolor",
-          text2: "Sit amet",
+          text1: "Lorem Ipsum Dolor2",
+          text2: "Sit amet2",
         },
         {
           id: 3,
           img: "../static/layer-main-block3.png",
-          text1: "Lorem Ipsum Dolor",
-          text2: "Sit amet",
+          text1: "3Lorem Ipsum Dolor",
+          text2: "3Sit amet",
         },
       ],
     };
@@ -70,7 +67,16 @@ export default {
 };
 </script>
 <style scope>
+.main-content__slide {
+  border-radius: 0.7143rem;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
 .slick-slider {
+  height: 100%;
+}
+.slick-slide > div {
   height: 100%;
 }
 .slick-track {
@@ -86,11 +92,13 @@ export default {
   display: flex;
 }
 .main-content__slider-img {
-  z-index: 7;
-  width: auto;
+  z-index: 6;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-.main-content__slider:before {
+.main-content__slide:before {
   content: "";
   display: block;
   width: 100%;
@@ -99,36 +107,39 @@ export default {
   background: transparent;
   background-image: linear-gradient(to top, #002fc7, 60%, #ffffff);
   opacity: 0.3;
-  z-index: 8;
-  border-radius: 10px;
+  z-index: 7;
+  border-radius: 0.7143rem;
 }
 .main-content__slider-row-1 {
   position: absolute;
-  font-size: 23px;
+  font-size: 1.6429rem;
   font-weight: bold;
   letter-spacing: 0.58px;
-  margin: 250px 0 0 45px;
+  left: 2.5rem;
+  bottom: 14.6429rem;
   padding: 0;
   z-index: 8;
 }
 .main-content__slider-row-2 {
   position: absolute;
-  font-size: 40px;
+  font-size: 2.8571rem;
   font-weight: 600;
   line-height: 1.125;
   letter-spacing: 0.135px;
-  margin: 300px 0 0 43px;
+  left: 2.5rem;
+  bottom: 10.3571rem;
   z-index: 8;
 }
 .main-content__slider-managment {
   display: flex;
-  margin-top: 673px;
+  margin-top: 48.0714rem;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 12px 0 43px;
+  padding: 0 0.8571rem 0 3.0714rem;
 }
 .main-content__dot {
-  margin: -80px 0 0 35px;
+  bottom: 2.8571rem;
+  left: 2.5rem;
   z-index: 9;
   position: absolute;
 }
@@ -143,22 +154,22 @@ export default {
 }
 .main-content__dot li button {
   border: transparent;
-  width: 20px;
-  height: 20px;
+  width: 1.1429rem;
+  height: 1.1429rem;
   z-index: 8;
   background-color: #ffffff;
-  border-radius: 10px;
-  margin-right: 34px;
+  border-radius: 0.7143rem;
+  margin-right: 2.5rem;
   cursor: pointer;
   outline: none;
 }
 .main-content__slider-btns {
   display: flex;
   justify-content: space-between;
-  width: 100px;
+  width: 7.1429rem;
   z-index: 8;
   position: absolute;
-  margin-top: -80px;
-  margin-left: 750px;
+  bottom: 3.1429rem;
+  right: 2.5rem;
 }
 </style>

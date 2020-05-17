@@ -9,9 +9,9 @@
 <script>
 export default {
   components: {
-    "the-head": () => import("./TheHead.vue"),
-    "the-news-body": () => import("./TheNewsBody.vue"),
-    "the-footer": () => import("./TheFooter.vue"),
+    "the-head": () => import("../TheHead.vue"),
+    "the-news-body": () => import("../TheNewsBody.vue"),
+    "the-footer": () => import("../TheFooter.vue"),
   },
 };
 </script>
