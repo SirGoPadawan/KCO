@@ -9,7 +9,7 @@
         <ul class="header__submenu submenu">
           <li class="header__submenu-item">
             <!-- <a href="#">Новости</a> -->
-            <router-link to="/TheNews">Новости</router-link>
+            <router-link to="/the-news">Новости</router-link>
           </li>
           <li class="header__submenu-item">
             <a href="#">Лицензии</a>

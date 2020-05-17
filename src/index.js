@@ -3,12 +3,16 @@ import "./css/style.css";
 import Vue from "vue";
 import App from "./App.vue";
 import VueRouter from "vue-router";
-var TheNews = require("./components/TheNews.vue");
+import TheNews from "./components/TheNews.vue";
 
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  routers: [
+  routes: [
+    {
+      path: "/",
+      component: App,
+    },
     {
       path: "/the-news",
       component: TheNews,
@@ -18,7 +22,5 @@ const router = new VueRouter({
 
 new Vue({
   el: "#app",
-  render: (h) => h(App),
-  data: function() {},
-  routers,
+  router,
 });
