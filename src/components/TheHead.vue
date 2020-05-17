@@ -8,10 +8,9 @@
 <script>
 export default {
   components: {
-    "head-top": () => import("./TheHead/HeadTop.vue"),
-    "head-middle": () => import("./TheHead/HeadMiddle.vue"),
-    "head-nav": () => import("./TheHead/HeadNav.vue")
-  }
+    "head-top": () => import("./HeadTop.vue"),
+    "head-middle": () => import("./HeadMiddle.vue"),
+    "head-nav": () => import("./HeadNav.vue"),
+  },
 };
 </script>
-

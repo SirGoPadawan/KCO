@@ -8,8 +8,8 @@
 
 <script>
 export default {
+  name: "app",
   components: {
-    "v-slider": () => import("./components/VSliderMain.vue"),
     "the-head": () => import("./components/TheHead.vue"),
     "the-main": () => import("./components/TheMain.vue"),
     "the-footer": () => import("./components/TheFooter.vue"),

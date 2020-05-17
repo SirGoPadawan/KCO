@@ -8,7 +8,8 @@
         </a>
         <ul class="header__submenu submenu">
           <li class="header__submenu-item">
-            <a href="#">Новости</a>
+            <!-- <a href="#">Новости</a> -->
+            <router-link to="/TheNews">Новости</router-link>
           </li>
           <li class="header__submenu-item">
             <a href="#">Лицензии</a>
@@ -120,7 +121,10 @@
       </li>
     </ul>
     <form class="form-search">
-      <div @click="isActivePlaceHolder = !isActivePlaceHolder" class="search-btn btn"></div>
+      <div
+        @click="isActivePlaceHolder = !isActivePlaceHolder"
+        class="search-btn btn"
+      ></div>
       <input
         v-bind:class="[isActivePlaceHolder ? 'active' : '']"
         type="text"
@@ -135,6 +139,6 @@ export default {
   name: "statusClassHeadNav",
   data: function() {
     return { isActivePlaceHolder: false };
-  }
+  },
 };
 </script>
