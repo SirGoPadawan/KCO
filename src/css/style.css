@@ -646,7 +646,7 @@ i {
   border: 0.2rem dashed #000000;
   border-radius: 10px;
   margin-top: 6rem;
-  height: 228px;
+
   width: 100%;
 }
 .nav-info__btn-list {
@@ -687,7 +687,6 @@ i {
 }
 .nav-info__list.active {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -695,8 +694,9 @@ i {
   font-size: 1.3rem;
   flex-grow: 1;
   min-height: 95px;
-  padding-top: 3%;
+  padding-top: 2%;
   font-weight: 500;
+  margin-left: 75px;
 }
 .relevant {
   display: flex;

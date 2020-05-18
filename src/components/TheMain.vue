@@ -96,87 +96,7 @@
         </article>
       </div>
     </section>
-    <nav class="nav-info">
-      <header class="nav-info__btn-list">
-        <button class="nav-info__btn active">Организация</button>
-        <button class="nav-info__btn">Пациентам</button>
-        <button class="nav-info__btn">Информация</button>
-      </header>
-      <div class="nav-info__list-items">
-        <ul class="nav-info__list item-text_semibold active">
-          <li>
-            <a href="#" class="black">О центре</a>
-          </li>
-          <li>
-            <a href="#" class="black">Исследования</a>
-          </li>
-          <li>
-            <a href="#" class="black">Оргструктура</a>
-          </li>
-          <li>
-            <a href="#" class="black">Лекции и доклады</a>
-          </li>
-          <li>
-            <a href="#" class="black">Контакты</a>
-          </li>
-          <li>
-            <a href="#" class="black">Видеоархив</a>
-          </li>
-        </ul>
-        <ul class="nav-info__list item-text_semibold">
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-        </ul>
-        <ul class="nav-info__list item-text_semibold">
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-          <li>
-            <a href="#" class="black">Lorem, ipsum dolor.</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <the-nav-info />
     <section class="relevant">
       <the-relevant-slider />
     </section>
@@ -331,6 +251,7 @@ export default {
     "the-slider-main": () => import("./TheSliderMain.vue"),
     "the-relevant-slider": () => import("./TheRelevantSlider.vue"),
     "the-actual-slider": () => import("./TheActualSlider.vue"),
+    "the-nav-info": () => import("./TheNavInfo.vue"),
   },
 };
 </script>

@@ -50,8 +50,7 @@ export default {
           id: 3,
           img: "../static/book.png",
           relevantText1: "Ознакомиться",
-          relevantText2:
-            "На основании ФЗ'<q>'Об основах охраны здоровья граждан РФ'</q>'",
+          relevantText2: "На основании ФЗ «Об основах охраны здоровья граждан РФ»",
           relevantLinkText: "Плакат-памятка",
         },
         {
@@ -107,6 +106,7 @@ export default {
   background-color: rgb(232, 245, 255);
   text-align: center;
   padding: 50px 15px;
+  outline: none;
 }
 .relevant-text {
   text-align: center;
