@@ -34,7 +34,21 @@ export default {
         speed: 300,
         slidesToShow: 6,
         sliderToScroll: 1,
-      },
+        responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+  ]
+},
       sliders: [
         {
           id: 1,
@@ -125,5 +139,30 @@ export default {
 }
 .links-slider__box-text {
   padding: 0 14px;
+}
+@media screen and (max-width: 1210px){
+  .item-text_semibold {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1084px){
+  .item-text_semibold {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 661px){
+  .item-text_semibold {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  .item-text_semibold {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px){
+  .headline {
+    display: none;
+  }
 }
 </style>

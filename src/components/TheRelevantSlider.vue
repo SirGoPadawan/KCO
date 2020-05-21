@@ -30,6 +30,20 @@ export default {
         speed: 300,
         slidesToShow: 3,
         sliderToScroll: 1,
+        responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
       },
       sliders: [
         {
@@ -113,5 +127,10 @@ export default {
   margin-top: 0;
   margin-bottom: auto;
   padding-bottom: 24px;
+}
+@media screen and (max-width: 480px){
+  .headline {
+    display: none;
+  }
 }
 </style>
