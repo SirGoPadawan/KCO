@@ -2,32 +2,7 @@
   <main class="container">
     <section class="main-content">
       <the-slider-main class="main-content__slider" />
-      <article class="main-content__right-collumn">
-        <div class="main-content__collumn-item green-ground white">
-          <p class="main-content__text item-text_semibold">
-            Онкологическое заболевание: как защититься от рака?
-          </p>
-        </div>
-        <div class="main-content__collumn-item blue-ground white">
-          <p class="main-content__text item-text_semibold">
-            <q>Дорожная карта</q> Министерства здравохранения Хабаровского края
-          </p>
-        </div>
-        <div class="main-content__collumn-item aqua-ground blue">
-          <p class="main-content__text item-text_semibold">
-            Состоялся визит японской делегации
-          </p>
-        </div>
-        <div class="main-content__collumn-item item-border black">
-          <p class="main-content__questions">
-            По вопросам льготных лекарств звоните с 14:00 до 16:00 по тел.:
-            <br />
-            <span class="main-content__phone">8 4212 41-06-45</span>
-            <br />
-            <span class="main-content__all-phones green">Все телефоны</span>
-          </p>
-        </div>
-      </article>
+      <the-right-box-main class="main-content__right-collumn" />
     </section>
     <section class="news">
       <header class="headline-top">
@@ -252,6 +227,7 @@ export default {
     "the-relevant-slider": () => import("./TheRelevantSlider.vue"),
     "the-actual-slider": () => import("./TheActualSlider.vue"),
     "the-nav-info": () => import("./TheNavInfo.vue"),
+    "the-right-box-main": () => import("./TheRightBoxMain.vue"),
   },
 };
 </script>

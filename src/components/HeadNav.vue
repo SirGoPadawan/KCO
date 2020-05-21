@@ -4,11 +4,9 @@
       <li class="header__link-item">
         <a href="#" class="black">
           О центре
-          <i class="fas fa-sort-down"></i>
         </a>
         <ul class="header__submenu submenu">
           <li class="header__submenu-item">
-            <!-- <a href="#">Новости</a> -->
             <router-link to="/the-news">Новости</router-link>
           </li>
           <li class="header__submenu-item">
@@ -46,13 +44,11 @@
       <li class="header__link-item">
         <a href="#" class="black">
           Пациентам
-          <i class="fas fa-sort-down"></i>
         </a>
       </li>
       <li class="header__link-item">
         <a href="#" class="black">
           Ядерная медицина
-          <i class="fas fa-sort-down"></i>
         </a>
         <ul class="header__submenu submenu">
           <li class="header__submenu-item">
@@ -98,26 +94,57 @@
       <li class="header__link-item">
         <a href="#" class="black">
           Информация
-          <i class="fas fa-sort-down"></i>
         </a>
       </li>
       <li class="header__link-item">
         <a href="#" class="black">
           Наука
-          <i class="fas fa-sort-down"></i>
         </a>
       </li>
       <li class="header__link-item">
         <a href="#" class="black">
           Сведения
-          <i class="fas fa-sort-down"></i>
         </a>
       </li>
       <li class="header__link-item">
         <a href="#" class="black">
           Контакты
-          <i class="fas fa-sort-down"></i>
         </a>
+        <ul class="header__submenu submenu">
+          <li class="header__submenu-item">
+            <router-link to="/the-news">Новости</router-link>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#">Лицензии</a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#">Список работников</a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#">Оргструктура</a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#">Платные услуги</a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#">Видеоархив</a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#">Профсоюз ККЦО</a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#">Панорама</a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#">Охрана труда</a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#">Вакансии</a>
+          </li>
+        </ul>
       </li>
     </ul>
     <form class="form-search">

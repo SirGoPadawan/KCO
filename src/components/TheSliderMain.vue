@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <article>
     <VueSlickCarousel ref="carousel" v-bind="settings">
       <div v-for="slide in sliders" :key="slide.id" class="main-content__slide">
         <img :src="slide.img" class="main-content__slider-img " alt="" />
@@ -17,7 +17,7 @@
         class="main-content__btn box-arrow arrow-right white"
       ></button>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>

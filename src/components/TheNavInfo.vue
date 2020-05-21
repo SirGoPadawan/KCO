@@ -61,6 +61,26 @@ export default {
               name: "Видеоархив",
               img: "../static/shapenav6.png",
             },
+            {
+              id: "7",
+              name: "Видеоархив",
+              img: "../static/shapenav6.png",
+            },
+            {
+              id: "8",
+              name: "Видеоархив",
+              img: "../static/shapenav6.png",
+            },
+            {
+              id: "9",
+              name: "Видеоархив",
+              img: "../static/shapenav6.png",
+            },
+            {
+              id: "10",
+              name: "Видеоархив",
+              img: "../static/shapenav6.png",
+            },
           ],
         },
         {

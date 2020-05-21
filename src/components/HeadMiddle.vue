@@ -202,8 +202,6 @@
                   </li>
                 </ul>
               </li>
-            </ul>
-            <ul class="box-items__map-site second">
               <li class="headlines__map-site">
                 <a href="#" class="black item-text_normal">Сведения</a>
                 <ul class="submenu__map-site">
