@@ -105,51 +105,8 @@
             <li class="nav-footer__link">
               <a href="#">Вопросы и ответы</a>
             </li>
-            <div class="map-site">
-              <p class="map-site__text">Карта сайта</p>
-            </div>
-            <div class="footer-search">
-              <p class="footer__text-search">Поиск</p>
-              <form class="form-search" id="changeClass">
-                <div
-                  @click="isActivePlaceHolder = !isActivePlaceHolder"
-                  class="search-btn btn"
-                ></div>
-                <input
-                  type="text"
-                  class="search-place"
-                  placeholder="Поиск по сайту..."
-                  v-bind:class="[isActivePlaceHolder ? 'active' : '']"
-                />
-              </form>
-            </div>
             <div id="ap" class="link-youtube">
               <a href="#" class="youtube-img-link"></a>
-              <div class="social">
-                <button
-                  id="btnSocialFooter"
-                  @click="isActiveSocial = !isActiveSocial"
-                  class="social-btn btn"
-                ></button>
-                <div
-                  id="socialFooter"
-                  class="social-links social-links__footer-position"
-                  v-bind:class="[isActiveSocial ? 'active' : '']"
-                >
-                  <p>
-                    <a href="#" class="social-item vk black"></a>
-                  </p>
-                  <p>
-                    <a href="#" class="social-item fb black"></a>
-                  </p>
-                  <p>
-                    <a href="#" class="social-item ok black"></a>
-                  </p>
-                  <p>
-                    <a href="#" class="social-item inst black"></a>
-                  </p>
-                </div>
-              </div>
             </div>
           </ul>
         </li>

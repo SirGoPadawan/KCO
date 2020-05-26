@@ -6,7 +6,7 @@
       <button @click="showNext" class="box-arrow arrow-right smoke"></button>
     </header>
     <VueSlickCarousel v-bind="settings" ref="carousel">
-      <div v-for="slide in sliders" :key="slide.id" class="relevant__bottom-box">
+      <div v-for="slide in allDataSlider" :key="slide.id" class="relevant__bottom-box">
         <img :src="slide.img" class="" alt="" />
         <h3 class="item-text_extrabold">{{ slide.relevantText1 }}</h3>
         <p class="relevant-text item-text_semibold">
@@ -19,7 +19,9 @@
 </template>
 <script>
 import VueSlickCarousel from "vue-slick-carousel";
+import { mapGetters } from "vuex";
 export default {
+  computed: mapGetters(["allDataSlider"]),
   components: { VueSlickCarousel },
   data() {
     return {
@@ -31,65 +33,20 @@ export default {
         slidesToShow: 3,
         sliderToScroll: 1,
         responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-      }
-    },
-  ]
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 700,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
       },
-      sliders: [
-        {
-          id: 1,
-          img: "../static/gerb.png",
-          relevantText1: "Минздрав России",
-          relevantText2: "Медицинская помощь больным с онкологическими заболеваниями",
-          relevantLinkText: "Плакат-памятка",
-        },
-        {
-          id: 2,
-          img: "../static/ACS.png",
-          relevantText1: "Пройти бесплатно",
-          relevantText2: " Анамнестический онкологический скриннинг",
-          relevantLinkText: "Плакат-памятка",
-        },
-        {
-          id: 3,
-          img: "../static/book.png",
-          relevantText1: "Ознакомиться",
-          relevantText2: "На основании ФЗ «Об основах охраны здоровья граждан РФ»",
-          relevantLinkText: "Плакат-памятка",
-        },
-        {
-          id: 4,
-          img: "../static/gerb.png",
-          relevantText1: "Минздрав России",
-          relevantText2: "Медицинская помощь больным с онкологическими заболеваниями",
-          relevantLinkText: "Плакат-памятка",
-        },
-        {
-          id: 5,
-          img: "../static/ACS.png",
-          relevantText1: "Пройти бесплатно",
-          relevantText2: " Анамнестический онкологический скриннинг",
-          relevantLinkText: "Плакат-памятка",
-        },
-        {
-          id: 6,
-          img: "../static/book.png",
-          relevantText1: "Ознакомиться",
-          relevantText2:
-            "На основании ФЗ'<q>'Об основах охраны здоровья граждан РФ'</q>'",
-          relevantLinkText: "Плакат-памятка",
-        },
-      ],
     };
   },
   methods: {
@@ -100,6 +57,11 @@ export default {
       this.$refs.carousel.prev();
     },
   },
+  /* computed: {
+    allDataSlider() {
+      return this.$store.getters.allDataSlider;
+    },
+  }, */
 };
 </script>
 <style scope>
@@ -121,6 +83,7 @@ export default {
   text-align: center;
   padding: 50px 15px;
   outline: none;
+  height: 100%;
 }
 .relevant-text {
   text-align: center;
@@ -128,7 +91,7 @@ export default {
   margin-bottom: auto;
   padding-bottom: 24px;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .headline {
     display: none;
   }
