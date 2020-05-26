@@ -1,11 +1,13 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import dataSlider from "./modules/dataSlider";
+import dataActual from "./modules/dataActual";
+import dataRelevant from "./modules/dataRelevant";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules: {
-    dataSlider,
+    dataRelevant,
+    dataActual,
   },
 });

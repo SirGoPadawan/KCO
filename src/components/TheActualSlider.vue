@@ -6,11 +6,7 @@
       <button @click="showNext" class="box-arrow arrow-right smoke"></button>
     </header>
     <VueSlickCarousel v-bind="settings" ref="carousel">
-      <div
-        v-for="slide in allDataSliderActual"
-        :key="slide.id"
-        class="links-slider__bottom-items"
-      >
+      <div v-for="slide in sliders" :key="slide.id" class="links-slider__bottom-items">
         <div class="links-slider__bottom-box">
           <div class="links-slider__box-img">
             <div class="links-slider__circle">
@@ -27,9 +23,11 @@
 </template>
 <script>
 import VueSlickCarousel from "vue-slick-carousel";
-import { mapGetters } from "vuex";
+import { mapState } from "vuex";
 export default {
-  computed: mapGetters(["allDataSliderActual"]),
+  computed: {
+    ...mapState({ sliders: (state) => state.dataActual.sliders }),
+  },
   components: { VueSlickCarousel },
   data() {
     return {
@@ -51,6 +49,12 @@ export default {
             breakpoint: 600,
             settings: {
               slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
             },
           },
         ],

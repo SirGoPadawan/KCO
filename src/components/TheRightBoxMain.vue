@@ -18,11 +18,9 @@
     <div class="main-content__collumn-item item-border black">
       <p class="main-content__questions">
         По вопросам льготных лекарств звоните с 14:00 до 16:00 по тел.:
-        <br />
-        <span class="main-content__phone">8 4212 41-06-45</span>
-        <br />
-        <span class="main-content__all-phones green">Все телефоны</span>
       </p>
+      <p class="main-content__phone">8 4212 41-06-45</p>
+      <p class="main-content__all-phones green">Все телефоны</p>
     </div>
   </article>
 </template>

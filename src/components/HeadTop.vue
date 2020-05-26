@@ -4,12 +4,14 @@
       <a href="#" class="green">In English</a>
     </div>
     <div class="header__link">
-      <a href="#" class="header-eye black"
-        ><span class="header-top__text">Контрастная версия</span></a
+      <a href="#" class="header-eye black header-top__text"
+        ><span class="top-media">Контрастная версия</span></a
       >
     </div>
     <div class="header__link header__link_more-size">
-      <a href="#" class="black">Предв. запись: 8 4212 41-06-30</a>
+      <a href="#" class="black"
+        >Предв. запись: <span class="top-media">8 4212 41-06-30</span></a
+      >
     </div>
     <div class="header__link">
       <a href="#" class="green">Как записаться</a>
