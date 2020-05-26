@@ -6,7 +6,11 @@
       <button @click="showNext" class="box-arrow arrow-right smoke"></button>
     </header>
     <VueSlickCarousel v-bind="settings" ref="carousel">
-      <div v-for="slide in allDataSlider" :key="slide.id" class="relevant__bottom-box">
+      <div
+        v-for="slide in allDataSliderRelevant"
+        :key="slide.id"
+        class="relevant__bottom-box"
+      >
         <img :src="slide.img" class="" alt="" />
         <h3 class="item-text_extrabold">{{ slide.relevantText1 }}</h3>
         <p class="relevant-text item-text_semibold">
@@ -21,7 +25,7 @@
 import VueSlickCarousel from "vue-slick-carousel";
 import { mapGetters } from "vuex";
 export default {
-  computed: mapGetters(["allDataSlider"]),
+  computed: mapGetters(["allDataSliderRelevant"]),
   components: { VueSlickCarousel },
   data() {
     return {
@@ -57,14 +61,9 @@ export default {
       this.$refs.carousel.prev();
     },
   },
-  /* computed: {
-    allDataSlider() {
-      return this.$store.getters.allDataSlider;
-    },
-  }, */
 };
 </script>
-<style scope>
+<style>
 .slick-slide > div {
   margin: 0 4px;
 }
