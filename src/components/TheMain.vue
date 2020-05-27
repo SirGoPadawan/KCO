@@ -4,7 +4,7 @@
       <the-slider-main class="main-content__slider" />
       <the-right-box-main class="main-content__right-collumn" />
     </section>
-    <the-news class="news" />
+    <!-- <the-news class="news" /> -->
     <the-nav-info />
     <section class="relevant">
       <the-relevant-slider />

@@ -1,5 +1,6 @@
 <template>
   <section class="header__top">
+    <p class="title-top_adaptive">Краевой клинический центр онкологии</p>
     <div class="header__link header__link_indentation-left">
       <a href="#" class="green">In English</a>
     </div>
