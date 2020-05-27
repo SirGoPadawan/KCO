@@ -1,48 +1,33 @@
 <template>
   <section class="header__bottom">
     <div class="header__logo">
-      <div>
-        <img src="static/logo.png" alt />
-      </div>
+      <img src="static/logo.png" alt />
       <router-link to="/" class="header__title black">
         Краевой клинический центр онкологии
       </router-link>
+      <router-link to="/" class="header__title_adaptive black ">
+        ККЦО
+      </router-link>
     </div>
     <div class="header__hot-line">
-      <div>
-        <p class="header__text">Горячая линия:</p>
-      </div>
-      <div class="header__number">
-        <a href class="header__phone">8 909 854-74-45</a>
-      </div>
+      <p class="header-hotline__text">Горячая линия:</p>
+      <router-link to="#" class="header__phone">8 909 854-74-45</router-link>
     </div>
     <div class="header__address">
-      <div class="header__index">
-        <p class="header__text">680042, г. Хабаровск,</p>
-      </div>
-      <div class="header__address">
-        <a href class="header__point">Воронежское шоссе, 164</a>
-      </div>
+      <p class="header-address__text">680042, г. Хабаровск,</p>
+      <a href class="header__point">Воронежское шоссе, 164</a>
     </div>
     <div class="header__reference">
       <div class="social">
         <button @click="isActiveSocial = !isActiveSocial" class="social-btn btn"></button>
         <div v-bind:class="[isActiveSocial ? 'active' : '']" class="social-links">
-          <p>
-            <a href="#" class="social-item vk black"></a>
-          </p>
-          <p>
-            <a href="#" class="social-item fb black"></a>
-          </p>
-          <p>
-            <a href="#" class="social-item ok black"></a>
-          </p>
-          <p>
-            <a href="#" class="social-item inst black"></a>
-          </p>
+          <a href="#" class="social-item vk black"></a>
+          <a href="#" class="social-item fb black"></a>
+          <a href="#" class="social-item ok black"></a>
+          <a href="#" class="social-item inst black"></a>
         </div>
       </div>
-      <div id="map" class="map-items">
+      <div class="map-items">
         <button
           @click="isActiveMapMenu = !isActiveMapMenu"
           class="butter-btn btn"

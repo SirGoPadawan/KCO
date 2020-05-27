@@ -103,29 +103,38 @@ i {
   flex-wrap: wrap;
 }
 .header__title {
+  width: 370px;
+}
+.header__title,
+.header__title_adaptive {
   font-size: 2.4rem;
   font-weight: 700;
-  width: 408px;
   letter-spacing: -0.04em;
   line-height: 0.9em;
   margin-left: 12px;
+}
+.header__title_adaptive {
+  display: none;
 }
 .header__logo {
   display: flex;
   align-items: center;
 }
-.header__hot-line {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  line-height: 1.1em;
+.header-hotline__text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 28px;
 }
-.header__text {
+.header-address__text {
+  margin-left: 23px;
+}
+.header__point {
   font-size: 16px;
   font-weight: 400;
 }
-.header__number {
-  margin: 0 0 0 -28px;
+.header__point:before {
+  content: url(../img/point.png);
+  margin-right: 7px;
 }
 .header__phone {
   font-weight: bold;
@@ -136,24 +145,6 @@ i {
   content: url(../img/phone.png);
   margin-right: 9px;
 }
-.header__address {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.header__point {
-  font-size: 16px;
-  font-weight: 400;
-}
-.header__point:before {
-  content: url(../img/point.png);
-  margin-right: 7px;
-}
-.header__reference {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .btn {
   background: none;
   border: none;
@@ -162,7 +153,7 @@ i {
   outline: none;
 }
 .social {
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   position: relative;
 }
 .social-btn {
@@ -173,15 +164,13 @@ i {
 }
 .social-links {
   display: none;
-  flex-direction: row;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 6.928px 35px 0px rgb(217, 229, 237);
   position: absolute;
-  right: -10px;
-  top: -16px;
-  padding-right: 148px;
-  padding-left: 14px;
+  right: 0;
+  bottom: 20px;
+  padding: 16px 131px 16px 14px;
   z-index: 1;
 }
 .social-links.active {
@@ -948,9 +937,37 @@ li:last-child .submenu {
   right: -10px;
   width: 200px;
 }
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1200px) {
+  .header__main-menu {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .header__main-menu {
     display: none;
+  }
+  .header__title {
+    font-size: 2rem;
+    width: 308px;
+  }
+  .header__phone {
+    font-size: 1.3rem;
+  }
+  .header-address__text,
+  .header-hotline__text {
+    margin: 8px;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 945px) {
+  .header__title {
+    display: none;
+  }
+  .header__title_adaptive {
+    display: block;
+    font-size: 3.5rem;
   }
 }
 @media screen and (max-width: 876px) {
