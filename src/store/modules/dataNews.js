@@ -1,0 +1,51 @@
+export default {
+  state: {
+    itemNews: [
+      {
+        id: 1,
+        img: "static/middle_1.png",
+        dataTime: "2018-08-27",
+        timeText: "27 ноября",
+        title: "Профилактика рака груди. Школа здоровья. GuberniaTV",
+        linkContent: "#",
+        textLink: "Смотреть",
+      },
+      {
+        id: 2,
+        img: "static/middle_2.png",
+        dataTime: "2018-10-27",
+        timeText: "27 октября",
+        title: "Таргетная терапия метастатического рака молочной железы",
+        linkContent: "#",
+        textLink: "Читать",
+      },
+      {
+        id: 3,
+        img: "static/new-bottom-img.png",
+        dataTime: "2018-10-27",
+        timeText: "27 октября",
+        title: "Онкологические заболевания: как защититься от рака? Школа здоровья. GuberniaTV",
+        linkContent: "#",
+        textLink: "Смотреть",
+      },
+      {
+        id: 4,
+        img: "",
+        dataTime: "2018-10-27",
+        timeText: "27 октября",
+        title: "Визит коллег из г. Кванчжу. Наш онкологический центр посетила делегация",
+        linkContent: "#",
+        textLink: "Читать",
+      },
+      {
+        id: 5,
+        img: "",
+        dataTime: "2018-10-27",
+        timeText: "27 октября",
+        title: "Проект Центра протонно-лучевой терапии в Хабаровске",
+        linkContent: "#",
+        textLink: "Смотреть",
+      },
+    ],
+  },
+};

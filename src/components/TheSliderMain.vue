@@ -3,8 +3,12 @@
     <VueSlickCarousel ref="carousel" v-bind="settings">
       <div v-for="slide in sliders" :key="slide.id" class="main-content__slide">
         <img :src="slide.img" class="main-content__slider-img " alt="" />
-        <a href="#" class="main-content__slider-row-1 white">{{ slide.text1 }} </a>
-        <a href="#" class="main-content__slider-row-2 white">{{ slide.text2 }} </a>
+        <a href="#" class="main-content__slider-row-1 white"
+          >{{ slide.text1 }}
+        </a>
+        <a href="#" class="main-content__slider-row-2 white"
+          >{{ slide.text2 }}
+        </a>
       </div>
     </VueSlickCarousel>
     <div class="main-content__slider-btns">
@@ -22,9 +26,12 @@
 
 <script>
 import VueSlickCarousel from "vue-slick-carousel";
-
+import { mapState } from "vuex";
 export default {
   components: { VueSlickCarousel },
+  computed: {
+    ...mapState({ sliders: (state) => state.dataSliderMain.sliders }),
+  },
   data() {
     return {
       settings: {
@@ -34,26 +41,6 @@ export default {
         infinite: true,
         speed: 0,
       },
-      sliders: [
-        {
-          id: 1,
-          img: "../static/layer-main-block.png",
-          text1: "1Lorem Ipsum asdDolor",
-          text2: "1Sit ametasdasda",
-        },
-        {
-          id: 2,
-          img: "../static/layer-main-block2.png",
-          text1: "Lorem Ipsum Dolor2",
-          text2: "Sit amet2",
-        },
-        {
-          id: 3,
-          img: "../static/layer-main-block3.png",
-          text1: "3Lorem Ipsum Dolor",
-          text2: "3Sit amet",
-        },
-      ],
     };
   },
   methods: {
@@ -66,7 +53,7 @@ export default {
   },
 };
 </script>
-<style scope>
+<style>
 .main-content__slide {
   border-radius: 0.7143rem;
   height: 100%;
@@ -145,7 +132,6 @@ export default {
 }
 .main-content__dot li {
   display: inline-block;
-
   font-size: 0;
   color: transparent;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <header class="relevant__top">
       <button @click="showPrev" class="box-arrow arrow-left smoke"></button>
       <a href="#" class="headline blue">Актуально</a>
@@ -15,7 +15,7 @@
         <a href="#" class="link_big item-text_extrabold">{{ slide.relevantLinkText }}</a>
       </div>
     </VueSlickCarousel>
-  </div>
+  </section>
 </template>
 <script>
 import VueSlickCarousel from "vue-slick-carousel";
